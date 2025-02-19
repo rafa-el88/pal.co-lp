@@ -824,7 +824,7 @@
   background-color: var(--primary-gray-stage-gray-500); */
 
   display: flex;
-  height: var(--header2-height);
+  height: var(--header-height);
   align-items: center;
   justify-content: space-between;
   padding: var(--tokens-spacing-system-spacing-xxxl) 182px var(--tokens-spacing-system-spacing-xxxl) 182px;
@@ -847,7 +847,7 @@
   align-items: center;
   position: relative;
   background-color: var(--primary-gray-stage-gray-500);
-  padding: var(--header2-height);
+  padding: var(--header-height);
 }
 
 .element-institucional .slide-2 {
@@ -863,9 +863,9 @@
 
 .element-institucional .palco-mulher-cartao {
   position: absolute;
- /* width: 960px;  */
+  width: 960px;
   height: 521px;
-  top: 30px;
+  top: 161px;
   left: 32px;
   object-fit: cover;
 }
@@ -1712,12 +1712,6 @@
 }
 
 .element-institucional .header-3 {
-  /*display: flex;
-  width: 1920px;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--primary-gray-stage-gray-500);*/
   display: flex;
   height: var(--header2-height);
   align-items: center;
