@@ -164,6 +164,15 @@
   font-style: var(--subtitle-2-font-style);
 }
 
+.element-institucional .header-text-menu {
+  color: var(--primary-base-black);
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .element-institucional .arrow-drop-down {
   position: relative;
   width: 40px;
@@ -791,6 +800,7 @@
   white-space: nowrap;
   font-style: var(--subtitle-2-font-style);
 }
+/* //rafa */
 
 .element-institucional.div-6 {
   display: flex;
@@ -803,7 +813,7 @@
 }
 
 .element-institucional .header-2 {
-  display: flex;
+  /* display: flex;
   height: 88px;
   align-items: center;
   justify-content: space-between;
@@ -811,7 +821,20 @@
   position: relative;
   align-self: stretch;
   width: 100%;
+  background-color: var(--primary-gray-stage-gray-500); */
+
+  display: flex;
+  height: var(--header2-height);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--tokens-spacing-system-spacing-xxxl) 182px var(--tokens-spacing-system-spacing-xxxl) 182px;
+  align-self: stretch;
+  width: 100%;
   background-color: var(--primary-gray-stage-gray-500);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .element-institucional .main {
@@ -840,9 +863,9 @@
 
 .element-institucional .palco-mulher-cartao {
   position: absolute;
-  width: 960px;
+ /* width: 960px;  */
   height: 521px;
-  top: -161px;
+  top: 30px;
   left: 32px;
   object-fit: cover;
 }
@@ -1709,7 +1732,6 @@
   z-index: 1000;
 }
 
-
 .element-institucional .espacador {
   position: relative;
   flex: 1;
@@ -1730,10 +1752,7 @@
 
 .element-institucional .navbar {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+  gap: 24px;
 }
 
 .element-institucional .button {
