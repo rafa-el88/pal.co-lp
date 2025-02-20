@@ -528,7 +528,7 @@ body {
   font-family: var(--subtitle-2-font-family);
   font-weight: var(--subtitle-2-font-weight);
   color: var --primary-base-black;
-  font-size: var(--subtitle-2-font-size);
+  font-size: var --subtitle-2-font-size;
   letter-spacing: var(--subtitle-2-letter-spacing);
   line-height: var(--subtitle-2-line-height);
   position: relative;
@@ -618,7 +618,7 @@ body {
   font-weight: var(--title-2-font-weight);
   color: #000000;
   font-size: var(--title-2-font-size);
-  letter-spacing: var(--title-2-letter-spacing);
+  letter-spacing: var --title-2-letter-spacing;
   line-height: var(--title-2-line-height);
   font-style: var(--title-2-font-style);
 }
@@ -2666,6 +2666,9 @@ body {
   padding: 0px 0px 16px;
   position: relative;
   flex: 0 0 auto;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .overlay-lead .pi-x {
