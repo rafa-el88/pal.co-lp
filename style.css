@@ -1292,6 +1292,7 @@ body {
   position: relative;
   flex: 1;
   flex-grow: 1;
+  gap: 32px;
 }
 
 .element-institucional .item-2 {
@@ -1770,7 +1771,7 @@ body {
     transform: translateY(-8px) scale(1.1);
   }
 }
-.element-institucional .button {
+.element-institucional .button-modal, button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -1829,7 +1830,7 @@ body {
 
 .element-institucional .text-wrapper-42 {
   position: relative;
-  width: 700px;
+  width: 65%;
   margin-top: -1px;
   font-family: var(--display-XL-font-family);
   font-weight: var(--display-XL-font-weight);
@@ -1863,7 +1864,7 @@ body {
 
 .element-institucional .text-wrapper-43 {
   position: relative;
-  width: 800px;
+  width: 65%;
   margin-top: -1px;
   font-family: var(--display-XL-font-family);
   font-weight: var(--display-XL-font-weight);
@@ -2249,7 +2250,7 @@ body {
 .element-institucional .FAQ-3 {
   display: flex;
   width: 1440px;
-  height: 896px;
+  height: 836px;
   align-items: center;
   justify-content: center;
   gap: 32px;
@@ -2271,7 +2272,6 @@ body {
 }
 
 .element-institucional .pergunta {
-  height: 136px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2648,8 +2648,10 @@ body {
 }
 
 .overlay-lead .fechar {
+  width: 100%;
   display: inline-flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
   padding: 0px 0px 16px;
   position: relative;
