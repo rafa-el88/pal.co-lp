@@ -1774,7 +1774,7 @@
   display: flex;
   position: relative;
   background-color: var(--primary-gray-stage-gray-500);
-  padding: var(--header2-height);
+  padding-top: var(--header2-height);
 }
 
 .element-institucional .slide-4 {
