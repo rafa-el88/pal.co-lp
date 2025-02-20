@@ -5,7 +5,7 @@ const totalSlides = 3;
 
 function showSlide(slideIndex) {
   for (let i = 1; i <= totalSlides; i++) {
-    document.getElementById(`slide_${i}`).style.display = i === slideIndex ? 'block' : 'none';
+    document.getElementById(`id_slide_${i}`).style.display = i === slideIndex ? 'block' : 'none';
     document.getElementById(`button_slider_${i}`).classList.toggle('active', i === slideIndex);
     document.getElementById(`button_slider_${i + 3}`).classList.toggle('active', i === slideIndex);
     document.getElementById(`button_slider_${i + 6}`).classList.toggle('active', i === slideIndex);

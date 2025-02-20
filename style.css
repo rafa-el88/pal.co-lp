@@ -162,7 +162,7 @@
   width: 100%;
   height: 450.91px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .conta-digital {
@@ -245,7 +245,7 @@
   width: 100%;
   height: 362px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .frame-2 {
@@ -369,7 +369,7 @@
   width: 100%;
   height: 316.67px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .text-wrapper-7 {
@@ -479,7 +479,7 @@
   width: 100%;
   height: 251.69px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .o-palco {
@@ -528,7 +528,7 @@
   width: 100%;
   height: 425.99px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .FAQ {
@@ -664,7 +664,7 @@
   width: 100%;
   height: 1px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .footer {
@@ -843,7 +843,7 @@
   top: 161px;
   left: 32px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .textos-2 {
@@ -886,10 +886,10 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: var(--size-space-600);
-  position: relative;
-  flex: 0 0 auto;
+  position: absolute;
+  top: 308px;
+  left: 950px;
 }
 
 .element-institucional .button-slider {
@@ -907,6 +907,11 @@
   border-radius: var(--shape-corner-extra-large);
   border: 1px solid;
   border-color: var(--primary-base-black);
+  cursor: pointer; /* Add mouse pointer for buttons */
+}
+
+.element-institucional .button-slider.active {
+  background-color: var(--active-button-color); /* Highlight active button */
 }
 
 .element-institucional .text-wrapper-21 {
@@ -932,7 +937,7 @@
   top: 161px;
   left: 32px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .text-wrapper-22 {
@@ -974,7 +979,7 @@
   top: 161px;
   left: 32px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .textos-3 {
@@ -1120,7 +1125,7 @@
   flex-grow: 1;
   height: 481.33px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .bloco-inf-2 {
@@ -1208,7 +1213,7 @@
   flex-grow: 1;
   height: 392.11px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .text-wrapper-30 {
@@ -1388,7 +1393,7 @@
   top: 85px;
   left: 17px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .texto-2 {
@@ -1482,7 +1487,7 @@
   height: 390.98px;
   margin-left: -17px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .bloco-direita {
@@ -1739,12 +1744,10 @@
   from {
     transform: translateY(0) scale(1);
   }
-
   to {
     transform: translateY(-8px) scale(1.1);
   }
 }
-
 .element-institucional .button {
   all: unset;
   box-sizing: border-box;
@@ -1754,21 +1757,6 @@
   gap: 24px;
   position: relative;
   flex: 0 0 auto;
-}
-
-.button div {
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.button div:hover {
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.plus-btn img,
-.minus-btn img {
-  cursor: pointer;
 }
 
 .element-institucional .slide-main {
@@ -1801,7 +1789,7 @@
   top: 60px;
   left: 32px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .textos-4 {
@@ -1944,7 +1932,7 @@
   align-self: stretch;
   width: 761.89px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .text-wrapper-45 {
@@ -2032,7 +2020,7 @@
   top: 101px;
   left: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .texto-3 {
@@ -2116,7 +2104,7 @@
   top: 57px;
   left: -70px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .texto-4 {
@@ -2194,7 +2182,7 @@
   height: 564.06px;
   margin-left: -29px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .element-institucional .bloco-direita-2 {
@@ -2358,31 +2346,24 @@
   .element-institucional.div-6 {
     display: none !important;
   }
-
   .element-institucional.div-10 {
     display: none !important;
   }
 }
-
 @media (min-width: 1024px) and (max-width: 1439px) {
   .element-institucional.div {
     display: none !important;
   }
-
   .element-institucional.div-10 {
     display: none !important;
   }
 }
-
 /* @media (min-width: 1920px) { */
 @media (min-width: 1440px) {
   .element-institucional.div {
     display: none !important;
   }
-
   .element-institucional.div-6 {
     display: none !important;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
