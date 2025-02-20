@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: Fraunces, Figtree, sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
 :root {
   --header-height: 88px;
   --header2-height: 110px;
@@ -2372,4 +2386,10 @@
   .element-institucional.div-6 {
     display: none !important;
   }
+}
+#conta-digital,
+#cartoes,
+#banner,
+#FAQ {
+  scroll-margin-top: 100px; /* Adjust this value to be the height of your header */
 }/*# sourceMappingURL=style.css.map */
