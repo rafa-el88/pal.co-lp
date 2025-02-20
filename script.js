@@ -5,7 +5,7 @@ const totalSlides = 3;
 
 function showSlide(slideIndex) {
   for (let i = 1; i <= totalSlides; i++) {
-    document.getElementById(`id_slide_${i}`).style.display = i === slideIndex ? 'block' : 'none';
+    document.getElementById(`id_slide_${i}`).style.display = i === slideIndex ? 'inline-flex' : 'none';
     document.getElementById(`button_slider_${i}`).classList.toggle('active', i === slideIndex);
     document.getElementById(`button_slider_${i + 3}`).classList.toggle('active', i === slideIndex);
     document.getElementById(`button_slider_${i + 6}`).classList.toggle('active', i === slideIndex);
@@ -17,7 +17,7 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 10000); // Change slide every 10 seconds
+setInterval(nextSlide, 6000); // Change slide every 10 seconds
 
 // Initialize the first slide
 showSlide(currentSlide);
@@ -64,36 +64,3 @@ const alternarModal = () => {
 [abrirModalBotao, fecharModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => alternarModal());
 });
-
-
-
-// const modal = document.getElementById('my-modal');
-// const btnOpenModal = document.getElementById('btn-abrir-modal');
-
-// // Open modal when clicking the button
-// btnOpenModal.addEventListener('click', () => {
-//   modal.style.display = 'flex';
-// });
-
-// // Close modal when clicking outside
-// window.addEventListener('click', (event) => {
-//   if (event.target === modal) {
-//     modal.style.display = 'none';
-//   }
-// });
-
-// var acc = document.getElementsByClassName("question-accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
-

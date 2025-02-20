@@ -1765,6 +1765,7 @@ body {
   gap: 24px;
   position: relative;
   flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .element-institucional .slide-main {
@@ -2653,6 +2654,21 @@ body {
   position: relative;
   width: 40px;
   height: 40px;
+}
+
+.overlay-lead .fechar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 0px 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.overlay-lead .pi-x {
+  position: relative;
+  width: 44px;
+  height: 44px;
 }
 
 #conta-digital-m,
