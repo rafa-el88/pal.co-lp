@@ -2397,9 +2397,8 @@ body {
   }
 }
 
-#conta-digital,
-#cartoes,
-#banner,
-#FAQ {
-  scroll-margin-top: 100px; /* Adjust this value to be the height of your header */
+#conta-digital-m, #cartoes-m, #banner-m, #FAQ-m,
+#conta-digital-t, #cartoes-t, #banner-t, #FAQ-t,
+#conta-digital, #cartoes, #banner, #FAQ {
+  scroll-margin-top: 100px; 
 }
