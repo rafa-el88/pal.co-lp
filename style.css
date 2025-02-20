@@ -583,6 +583,9 @@
   cursor: pointer;
 }
 
+/* .element-institucional .pergunta .div-4:hover {
+  background-color: #ccc; 
+} */
 .element-institucional .textos {
   gap: var(--tokens-spacing-system-spacing-md);
   flex: 1;
