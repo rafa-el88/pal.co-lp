@@ -63,5 +63,5 @@ document.querySelectorAll('.btn-open-modal').forEach(button => {
     button.addEventListener('click', () => alternarModal());
 });
 
-document.querySelector("#fechar-modal").addEventListener('click', () => alternarModal());
+document.querySelector("#btn-close-modal").addEventListener('click', () => alternarModal());
 fade.addEventListener('click', () => alternarModal());
