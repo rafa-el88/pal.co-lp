@@ -52,6 +52,36 @@ document.querySelectorAll('.plus-btn').forEach(button => {
   });
 });
 
+const abrirModalBotao = document.querySelector("#abrir-modal");
+const fecharModalButton = document.querySelector("#fechar-modal");
+const modal = document.querySelector("#overlay-lead");
+const fade = document.querySelector("#fade");
+
+const alternarModal = () => {
+  [modal, fade].forEach((el) => el.classList.toggle("hide"));
+};
+
+[abrirModalBotao, fecharModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => alternarModal());
+});
+
+
+
+// const modal = document.getElementById('my-modal');
+// const btnOpenModal = document.getElementById('btn-abrir-modal');
+
+// // Open modal when clicking the button
+// btnOpenModal.addEventListener('click', () => {
+//   modal.style.display = 'flex';
+// });
+
+// // Close modal when clicking outside
+// window.addEventListener('click', (event) => {
+//   if (event.target === modal) {
+//     modal.style.display = 'none';
+//   }
+// });
+
 // var acc = document.getElementsByClassName("question-accordion");
 // var i;
 
@@ -66,3 +96,4 @@ document.querySelectorAll('.plus-btn').forEach(button => {
 //     }
 //   });
 // }
+

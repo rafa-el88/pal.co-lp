@@ -162,21 +162,21 @@
   --primary-multiples-48: 48px;
   --primary-multiples-100: 100px;
   --size-space-0: 0px;
+  --size-space-200: 8px;
   --size-space-600: 24px;
   --size-space-300: 12px;
+  --size-space-400: 16px;
   --size-space-800: 32px;
   --size-space-1200: 48px;
   --size-space-1600: 64px;
-  --size-space-200: 8px;
-  --size-space-400: 16px;
   --size-space-2400: 96px;
+  --size-space-4000: 160px;
+  --size-space-4800: 192px;
   --tokens-spacing-system-spacing-md: var(--primary-multiples-16);
   --tokens-spacing-system-spacing-xs: var(--primary-multiples-8);
   --tokens-spacing-system-spacing-xxxl: var(--primary-multiples-32);
   --tokens-spacing-system-spacing-60: var(--primary-multiples-60);
-  --tokens-dropdown-linguas-dropdown-radius: var(
-    --tokens-radius-system-radius-100
-  );
+  --tokens-dropdown-linguas-dropdown-radius: var(--tokens-radius-system-radius-100);
   --tokens-radius-system-radius-100: var(--primary-multiples-100);
   --shape-corner-extra-large: 28px;
 }
