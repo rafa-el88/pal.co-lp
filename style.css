@@ -1493,13 +1493,13 @@
 }
 
 .element-institucional .FAQ-2 {
+  display: flex;
   width: 1024px;
   height: 972px;
-  gap: var(--tokens-spacing-system-spacing-xxxl);
-  padding: var(--tokens-spacing-system-spacing-60) var(--size-space-800) var(--tokens-spacing-system-spacing-60) var(--size-space-800);
-  display: flex;
   align-items: center;
   justify-content: center;
+  gap: var(--tokens-spacing-system-spacing-xxxl);
+  padding: var(--tokens-spacing-system-spacing-60) var(--size-space-800) var(--tokens-spacing-system-spacing-60) var(--size-space-800);
   position: relative;
   background-color: var(--primary-color-base-white);
 }
@@ -2308,7 +2308,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1919px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .element-institucional.div {
     display: none !important;
   }
@@ -2318,7 +2318,8 @@
   }
 }
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) { */
+  @media (min-width: 1440px) {
   .element-institucional.div {
     display: none !important;
   }
