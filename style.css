@@ -1771,7 +1771,7 @@ body {
     transform: translateY(-8px) scale(1.1);
   }
 }
-.element-institucional .button-modal, button {
+.element-institucional .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -1781,6 +1781,19 @@ body {
   position: relative;
   flex: 0 0 auto;
   cursor: pointer;
+}
+
+.element-institucional .btn-open-modal {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+  cursor: pointer;
+  z-index: 50;
 }
 
 .element-institucional .slide-main {
@@ -1808,7 +1821,6 @@ body {
 
 .element-institucional .img-3 {
   position: absolute;
-  /* width: 1408px; */
   height: 762px;
   top: 60px;
   left: 32px;
@@ -1825,7 +1837,6 @@ body {
   flex: 1;
   align-self: stretch;
   flex-grow: 1;
-  /* margin-left: -1408px; */
 }
 
 .element-institucional .text-wrapper-42 {
@@ -1848,7 +1859,6 @@ body {
   gap: var(--size-space-600);
   position: relative;
   flex: 0 0 auto;
-  /* margin-left: -1408px; */
 }
 
 .element-institucional .slide-5 {
@@ -2647,7 +2657,7 @@ body {
   height: 40px;
 }
 
-.overlay-lead .fechar {
+.overlay-lead .btn-close-modal {
   width: 100%;
   display: inline-flex;
   align-items: center;

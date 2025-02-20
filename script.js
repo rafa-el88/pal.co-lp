@@ -52,18 +52,6 @@ document.querySelectorAll('.plus-btn').forEach(button => {
     });
 });
 
-
-// document.querySelectorAll('.button-modal').forEach(button => {
-//     button.addEventListener('click', () => {
-//         const modal = document.querySelector('#overlay-lead');
-//         modal.classList.toggle('hide');
-//     });
-// });
-
-
-
-const abrirModalBotao = document.querySelector("#abrir-modal");
-const fecharModalButton = document.querySelector("#fechar-modal");
 const modal = document.querySelector("#overlay-lead");
 const fade = document.querySelector("#fade");
 
@@ -71,6 +59,9 @@ const alternarModal = () => {
     [modal, fade].forEach((el) => el.classList.toggle("hide"));
 };
 
-[abrirModalBotao, fecharModalButton, fade].forEach((el) => {
-    el.addEventListener("click", () => alternarModal());
+document.querySelectorAll('.btn-open-modal').forEach(button => {
+    button.addEventListener('click', () => alternarModal());
 });
+
+document.querySelector("#fechar-modal").addEventListener('click', () => alternarModal());
+fade.addEventListener('click', () => alternarModal());
