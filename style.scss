@@ -571,6 +571,10 @@
   flex: 0 0 auto;
 }
 
+.element-institucional .pergunta .div-4 {
+  cursor: pointer;
+}
+
 .element-institucional .textos {
   gap: var(--tokens-spacing-system-spacing-md);
   flex: 1;
@@ -2235,6 +2239,30 @@
   align-self: stretch;
   width: 100%;
 }
+
+// .question-accordion {
+//   background-color: #eee;
+//   color: #444;
+//   cursor: pointer;
+//   padding: 18px;
+//   width: 100%;
+//   border: none;
+//   text-align: left;
+//   outline: none;
+//   font-size: 15px;
+//   transition: 0.4s;
+// }
+
+// .question-accordion:hover {
+//   background-color: #ccc; 
+// }
+
+// .answer-accordion {
+//   padding: 0 18px;
+//   display: none;
+//   background-color: white;
+//   overflow: hidden;
+// }
 
 .element-institucional .text-wrapper-53 {
   position: relative;
