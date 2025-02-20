@@ -1,6 +1,7 @@
 :root {
   --header-height: 88px;
   --header2-height: 110px;
+  --active-button-color: #ffeb3b;
 }
 
 .element-institucional.div {
@@ -1710,6 +1711,22 @@
   gap: 24px;
 }
 
+.element-institucional .navbar a:hover {
+  div {
+    animation: translateY 0.8s infinite alternate;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
 .element-institucional .button {
   all: unset;
   box-sizing: border-box;
@@ -2319,7 +2336,7 @@
 }
 
 /* @media (min-width: 1920px) { */
-  @media (min-width: 1440px) {
+@media (min-width: 1440px) {
   .element-institucional.div {
     display: none !important;
   }
