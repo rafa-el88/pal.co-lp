@@ -65,3 +65,31 @@ document.querySelectorAll('.btn-open-modal').forEach(button => {
 
 document.querySelector("#btn-close-modal").addEventListener('click', () => alternarModal());
 fade.addEventListener('click', () => alternarModal());
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Collect form data
+    const formData = {
+      nomeCompleto: form.querySelector('input[placeholder="Nome completo"]').value,
+      ddd: form.querySelector('input[placeholder="DDD"]').value,
+      telefone: form.querySelector('input[placeholder="Telefone"]').value,
+      email: form.querySelector('input[placeholder="Email"]').value,
+      vinculoMusica: document.querySelector('.input-drop .text-wrapper-2').textContent // Assuming you want the displayed text
+    };
+
+    // Call the saveFormData function from api.js
+    saveFormData(formData)
+      .then(data => {
+        // Handle the response from the API (e.g., show a success message)
+        console.log("Data saved successfully:", data);
+        alert("Dados enviados com sucesso!"); //replace with a better UX
+      })
+      .catch(error => {
+        // Handle errors (e.g., show an error message)
+        console.error("Error saving data:", error);
+        alert("Ocorreu um erro ao salvar os dados."); //replace with a better UX
+      });
+  });
