@@ -52,6 +52,13 @@ document.querySelectorAll('.plus-btn').forEach(button => {
     });
 });
 
+document.getElementById('btn_manipula_menu').addEventListener('click', function() {
+    const img = this.querySelector('img');
+    if (img) {
+        img.src = img.src.includes('vector_open_menu.svg') ? 'img/vector_close_menu.svg' : 'img/vector_open_menu.svg';
+    }
+});
+
 const modal = document.querySelector("#overlay-lead");
 const fade = document.querySelector("#fade");
 
