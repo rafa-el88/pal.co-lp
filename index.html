@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="styleguide.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon_144x1444.png" type="image/png" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title>Pal.Co. Você no centro, sempre!</title>
@@ -1069,28 +1070,54 @@
     </div>
     <form id="form" class="forms">
       <div class="form-content input-telefone">
-        <input class="input-text" placeholder="Nome completo" />
+        <input id="name" class="input-text" type="text" placeholder="Nome completo*" />
+        <!-- <a>Aqui vai a mensagem de erro....</a> -->
       </div>
       <div class="form-content input-telefone">
-        <input class="input-text-2" placeholder="DDD" />
-        <input class="input-text" placeholder="Telefone" />
+        <input id="ddd" class="input-text-2" type="number" placeholder="DDD*" />
+        <input id="phone" class="input-text" type="tel" placeholder="Telefone*" />
+        <!-- <a>Aqui vai a mensagem de erro....</a> -->
       </div>
       <div class="form-content input-telefone">
-        <input class="input-text" placeholder="Email" type="email" />
+        <input id="email" class="input-text" type="email" placeholder="Email*" />
+        <!-- <a>Aqui vai a mensagem de erro....</a> -->
       </div>
 
       <div class="input-drop">
-        <div class="flag-text">
-          <p class="text-wrapper-2">Qual seu vínculo com a música?</p>
-          <img class="arrow-drop-down" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1.svg" />
+        <div class="select-wrapper">
+          <select id="music-affiliation" class="custom-select">
+            <option value="" disabled selected>Qual seu vínculo com a música?</option>
+            <option value="1">Arranjador(a)</option>
+            <option value="2">Cantor(a)</option>
+            <option value="3">Compositor(a)</option>
+            <option value="4">Diretor(a) Musical</option>
+            <option value="5">Distribuidor(a) de Música</option>
+            <option value="6">DJ/MC</option>
+            <option value="7">Empresário(a)</option>
+            <option value="8">Engenheiro de Som</option>
+            <option value="9">Fã</option>
+            <option value="10">Influenciador(a) Musical</option>
+            <option value="11">Instrumentista</option>
+            <option value="12">Outros</option>
+            <option value="13">Ouvinte</option>
+            <option value="14">Produtor(a)</option>
+            <option value="15">Produtor(a) Executivo(a)</option>
+            <option value="16">Roadie/Técnico de Som</option>
+            <option value="17">Técnico de Mixagem/Masterização</option>
+          </select>
+          <img class="arrow-drop-down" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1.svg"
+            alt="Dropdown arrow" />
         </div>
       </div>
-      <div class="button-lead">
-        <div class="QUERO-ABRIR-MINHA-wrapper">
-          <p class="QUERO-ABRIR-MINHA">Entrar para fila de espera</p>
+
+      <button class="button">
+        <div class="button-lead">
+          <div class="QUERO-ABRIR-MINHA-wrapper">
+            <p class="QUERO-ABRIR-MINHA">Entrar para fila de espera</p>
+          </div>
+          <img class="arrow-drop-down-dp" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1-1.svg" />
         </div>
-        <img class="arrow-drop-down-dp" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1-1.svg" />
-      </div>
+      </button>
     </form>
   </div>
 

@@ -2690,4 +2690,60 @@ body {
 #banner,
 #FAQ {
   scroll-margin-top: 100px;
+}
+
+.input-drop {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-drop .select-wrapper {
+  position: relative;
+  width: 100%;
+}
+.input-drop .select-wrapper .arrow-drop-down {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+.input-drop .custom-select {
+  width: 100%;
+  height: 52px;
+  padding: 12px 40px 12px 24px;
+  background-color: #ffffff;
+  border: 1px solid var(--primary-gray-stage-gray-200);
+  border-radius: 12px;
+  font-family: var(--subtitle-1-font-family);
+  font-size: var(--subtitle-1-font-size);
+  color: var(--primary-gray-stage-gray-500);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+.input-drop .custom-select:focus {
+  outline: none;
+  border-color: var(--primary-gray-stage-gray-500);
+}
+.input-drop .custom-select:hover {
+  border-color: var(--primary-gray-stage-gray-400);
+}
+.input-drop .custom-select option {
+  padding: 12px;
+}
+.input-drop .custom-select option:hover {
+  background-color: var(--primary-gray-stage-gray-100);
+}
+.input-drop .custom-select option:checked {
+  background-color: var(--primary-gray-stage-gray-200);
+  color: var(--primary-base-black);
+}
+
+.custom-select:focus + .arrow-drop-down {
+  transform: translateY(-50%) rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

@@ -73,11 +73,14 @@ form.addEventListener("submit", function (event) {
 
     // Collect form data
     const formData = {
-      nomeCompleto: form.querySelector('input[placeholder="Nome completo"]').value,
-      ddd: form.querySelector('input[placeholder="DDD"]').value,
-      telefone: form.querySelector('input[placeholder="Telefone"]').value,
-      email: form.querySelector('input[placeholder="Email"]').value,
-      vinculoMusica: document.querySelector('.input-drop .text-wrapper-2').textContent // Assuming you want the displayed text
+      nomeCompleto: form.querySelector('input[placeholder="Nome completo*"]').value,
+      ddd: form.querySelector('input[placeholder="DDD*"]').value,
+      telefone: form.querySelector('input[placeholder="Telefone*"]').value,
+      email: form.querySelector('input[placeholder="Email*"]').value,
+      vinculoMusica: {
+        value: form.querySelector('#music-affiliation').value,
+        text: form.querySelector('#music-affiliation option:checked').textContent
+      }
     };
 
     // Call the saveFormData function from api.js
@@ -92,4 +95,17 @@ form.addEventListener("submit", function (event) {
         console.error("Error saving data:", error);
         alert("Ocorreu um erro ao salvar os dados."); //replace with a better UX
       });
-  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.querySelector('#music-affiliation');
+    
+    // Atualiza o texto do placeholder quando uma opção é selecionada
+    select.addEventListener('change', function() {
+      if (this.value) {
+        this.classList.add('selected');
+      } else {
+        this.classList.remove('selected');
+      }
+    });
+});
