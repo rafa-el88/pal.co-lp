@@ -54,8 +54,11 @@ document.querySelectorAll('.plus-btn').forEach(button => {
 
 document.getElementById('btn_manipula_menu').addEventListener('click', function() {
     const img = this.querySelector('img');
+    const menu = document.getElementById('div-menu-m');
     if (img) {
-        img.src = img.src.includes('vector_open_menu.svg') ? 'img/vector_close_menu.svg' : 'img/vector_open_menu.svg';
+        const isOpen = img.src.includes('vector_open_menu.svg');
+        img.src = isOpen ? 'img/vector_close_menu.svg' : 'img/vector_open_menu.svg';
+        menu.style.display = isOpen ? 'flex' : 'none';
     }
 });
 
