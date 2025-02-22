@@ -68,6 +68,27 @@ body {
   height: 35px;
 }
 
+.element-institucional .div-menu-m {
+  display: flex;
+  align-items: flex-start;
+  gap: 344px;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--primary-gray-stage-gray-500);
+}
+
+.element-institucional .div-m {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
 .element-institucional .slide {
   display: flex;
   flex-direction: column;
