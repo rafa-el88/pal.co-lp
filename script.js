@@ -127,3 +127,11 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+// Fecha o menu quando um item for clicado
+document.querySelectorAll('#nav a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.getElementById('nav').classList.remove('active');
+  });
+});
