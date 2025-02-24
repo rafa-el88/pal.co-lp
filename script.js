@@ -33,6 +33,99 @@ document.getElementById('button_slider_7').addEventListener('click', () => showS
 document.getElementById('button_slider_8').addEventListener('click', () => showSlide(2));
 document.getElementById('button_slider_9').addEventListener('click', () => showSlide(3));
 
+document.addEventListener('DOMContentLoaded', function() {
+  let currentSlideM = 1;
+  const totalSlidesM = 3;
+
+  function showSlideM(slideIndex) {
+    for (let i = 1; i <= totalSlidesM; i++) {
+      const slide = document.getElementById(`id_slide_${i}_m`);
+      if (slide) {
+        slide.style.display = i === slideIndex ? 'flex' : 'none';
+      }
+      
+      // Atualiza os botões do slider
+      const buttons = [
+        document.getElementById(`button_slider_${i}_m`),
+        document.getElementById(`button_slider_${i + 3}_m`),
+        document.getElementById(`button_slider_${i + 6}_m`)
+      ];
+      
+      buttons.forEach(btn => {
+        if (btn) {
+          btn.classList.toggle('active', i === slideIndex);
+        }
+      });
+    }
+  }
+
+  function nextSlideM() {
+    currentSlideM = (currentSlideM % totalSlidesM) + 1;
+    showSlideM(currentSlideM);
+  }
+
+  // Inicializa o primeiro slide
+  showSlideM(currentSlideM);
+
+  // Adiciona event listeners para os botões
+  for (let i = 1; i <= 9; i++) {
+    const btn = document.getElementById(`button_slider_${i}_m`);
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const targetSlide = ((i - 1) % 3) + 1;
+        currentSlideM = targetSlide;
+        showSlideM(targetSlide);
+      });
+    }
+  }
+
+  // Troca automática de slides
+  const slideInterval = setInterval(nextSlideM, 6000);
+
+  // Opcional: Pausa a troca automática quando o mouse está sobre o slider
+  const slideContainer = document.querySelector('.slide-mobile');
+  if (slideContainer) {
+    slideContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    slideContainer.addEventListener('mouseleave', () => setInterval(nextSlideM, 6000));
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentSlide = 1;
+  const totalSlides = 3;
+
+  function showSlide(slideIndex) {
+    for (let i = 1; i <= totalSlides; i++) {
+      const slide = document.getElementById(`id_slide_${i}_m`);
+      if (slide) {
+        slide.classList.toggle('active', i === slideIndex);
+      }
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide % totalSlides) + 1;
+    showSlide(currentSlide);
+  }
+
+  // Initialize the first slide
+  showSlide(currentSlide);
+
+  // Add click event listeners for buttons
+  document.getElementById('button_slider_1_m').addEventListener('click', () => showSlide(1));
+  document.getElementById('button_slider_2_m').addEventListener('click', () => showSlide(2));
+  document.getElementById('button_slider_3_m').addEventListener('click', () => showSlide(3));
+  document.getElementById('button_slider_4_m').addEventListener('click', () => showSlide(1));
+  document.getElementById('button_slider_5_m').addEventListener('click', () => showSlide(2));
+  document.getElementById('button_slider_6_m').addEventListener('click', () => showSlide(3));
+  document.getElementById('button_slider_7_m').addEventListener('click', () => showSlide(1));
+  document.getElementById('button_slider_8_m').addEventListener('click', () => showSlide(2));
+  document.getElementById('button_slider_9_m').addEventListener('click', () => showSlide(3));
+
+  // Optionally, you can set an interval to automatically change slides
+  setInterval(nextSlide, 6000); // Change slide every 6 seconds
+});
+
 // Add click event listeners for minus buttons
 document.querySelectorAll('.minus-btn').forEach(button => {
     button.addEventListener('click', () => {

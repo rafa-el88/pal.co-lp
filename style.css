@@ -195,7 +195,6 @@ body {
   position: relative;
   align-self: stretch;
   width: 100%;
-  height: 450.91px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2858,4 +2857,12 @@ body {
   border-color: var(--primary-base-black);
   align-items: center;
   position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
