@@ -1,25 +1,27 @@
-async function saveFormData(formData) {
-  const url = "http://localhost:6005/api/WaitingListAccount"; 
+const API_URL = 'http://localhost:6005/api';
 
-  const settings = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(formData)
-  };
+async function saveData(data) {
+  console.log('Data to save:', data);
+    try {
+        const response = await fetch(`${API_URL}/waitingListAccount`, {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
 
-  try {
-    const response = await fetch(url, settings);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+        if (!response.ok) {
+            throw new Error(`Erro HTTP: ${response.status}`);
+        }
+        
+        return await response.json();
+    } catch (error) {
+        console.error('Erro ao salvar dados:', error);
+        throw error;
     }
-    const data = await response.json();
-    console.log("Success:", data);
-    return data; // Return the response data if needed
-  } catch (error) {
-    console.error("Error:", error);
-    throw error; // Re-throw the error to be handled by the caller
-  }
 }
+
+// export { saveData };
 
