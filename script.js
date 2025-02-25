@@ -116,6 +116,25 @@ document.querySelectorAll('.plus-btn').forEach(button => {
     });
 });
 
+// Add click event listeners for minus buttons
+document.querySelectorAll('.minus-btn').forEach(button => {
+  button.addEventListener('click', () => {
+      const pTag = button.closest('.pergunta').querySelector('.div-5');
+      pTag.style.display = pTag.style.display === 'none' ? 'block' : 'none';
+  });
+});
+
+// Add click event listeners for plus buttons
+document.querySelectorAll('.plus-btn').forEach(button => {
+  button.addEventListener('click', () => {
+      const pTag = button.closest('.pergunta').querySelector('.div-5');
+      const imgTag = button.querySelector('img');
+      const isHidden = pTag.style.display === 'none';
+      pTag.style.display = isHidden ? 'block' : 'none';
+      imgTag.src = isHidden ? 'img/fi-rr-minus-small-11.svg' : 'img/fi_plus.svg';
+  });
+});
+
 const modal = document.querySelector("#overlay-lead");
 const fade = document.querySelector("#fade");
 
