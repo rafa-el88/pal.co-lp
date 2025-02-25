@@ -487,7 +487,6 @@ body {
 .element-institucional .banner {
   display: flex;
   flex-direction: column;
-  height: 483px;
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
@@ -557,7 +556,6 @@ body {
   position: relative;
   align-self: stretch;
   width: 100%;
-  height: 425.99px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -940,7 +938,7 @@ body {
   padding: var(--size-space-300);
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 40px;
   background-color: var(--primary-base-white);
   border-radius: var(--shape-corner-extra-large);
   border: 1px solid;
@@ -2399,6 +2397,21 @@ body {
   .element-institucional.div-10 {
     display: none !important;
   }
+  #overlay-lead {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 16px;
+    position: fixed;
+    background-color: var(--primary-color-base-black);
+    z-index: 1001;
+    justify-content: center;
+    display: grid;
+    overflow-y: scroll;
+    inset: 0;
+    width: 100%;
+    transform: none;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .element-institucional.div {
@@ -2835,7 +2848,7 @@ body {
 
 .slide .botoes-sldier-m {
   display: flex;
-  width: 174px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
