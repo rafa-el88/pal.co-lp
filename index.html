@@ -89,7 +89,7 @@
         <img class="mobile" src="img/slide3-mobile.png" />
         <div class="botoes-sldier-m">
           <div class="button-slider-5" id="button_slider_7_m">
-            <div class="text-wrapper">1</div>
+            <div class="text-wrappe-5">1</div>
           </div>
           <div class="button-slider" id="button_slider_8_m">
             <div class="text-wrapper-5">2</div>
@@ -1069,7 +1069,7 @@
 
 
   <!----- MODAL ----->
-  <div id="fade" class="hide"></div>
+  <!-- <div id="fade" class="hide"></div>
   <div id="overlay-lead" class="overlay-lead hide">
     <div class="text">
       <button class="btn-close-modal" id="btn-close-modal"><img class="pi-x" src="img/pi_x.svg" /></button>
@@ -1088,16 +1088,16 @@
     <form id="form" class="forms">
       <div class="form-content input-telefone">
         <input id="name" class="input-text" type="text" placeholder="Nome completo*" />
-        <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        <!-- <a>Aqui vai a mensagem de erro....</a> 
       </div>
       <div class="form-content input-telefone">
         <input id="ddd" class="input-text-2" type="number" placeholder="DDD*" />
         <input id="phone" class="input-text" type="tel" placeholder="Telefone*" />
-        <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        <!-- <a>Aqui vai a mensagem de erro....</a> 
       </div>
       <div class="form-content input-telefone">
         <input id="email" class="input-text" type="email" placeholder="Email*" />
-        <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        <!-- <a>Aqui vai a mensagem de erro....</a> 
       </div>
 
       <div class="input-drop">
@@ -1136,28 +1136,121 @@
         </div>
       </button>
     </form>
+  </div> -->
+  <!----- MODAL ----->
+  <div id="fade" class="hide"></div>
+  <div id="overlay-lead" class="overlay-lead hide">
+    <main class="form-modal-mobile form-modal-mobile-wrapper">
+      <div class="overlay-lead-wrapper">
+        <section class="overlay-lead">
+          <header class="text">
+            <button class="btn-close-modal"><img class="pi-x" src="img/pi_x.svg" /></button>
+            <h1 class="text-wrapper">Obrigado pelo interesse em abrir uma conta com a gente.</h1>
+            <p class="div">Por enquanto, o acesso ao Pal.Co é limitado e nossas vagas já foram preenchidas.</p>
+          </header>
+          <section class="text-2">
+            <h2 class="text-wrapper-2">Mas, fique tranquilo.</h2>
+            <p class="p">Quer garantir seu lugar no Pal.co?</p>
+            <p class="div">
+              Preencha seus dados abaixo e entre para a nossa lista de espera. Quando novas vagas abrirem, você será um
+              dos primeiros a saber.
+            </p>
+          </section>
+          <form id="form" class="forms">
+            <div class="div-2">
+              <input id="name" class="input-text" type="text" placeholder="Nome completo*" required
+                aria-required="true" />
+            </div>
+            <div class="div-2">
+              <div class="input-telefone">
+                <input id="ddd" class="div-wrapper" type="tel" placeholder="DDD*" required aria-required="true"
+                  maxlength="2" />
+                <input id="phone" class="input-text-2" type="tel" placeholder="Telefone*" required aria-required="true"
+                  maxlength="10" />
+              </div>
+            </div>
+            <div class="div-2">
+              <input id="email" class="input" placeholder="Email*" type="email" required aria-required="true" />
+            </div>
+            <div class="div-2">
+              <div class="input-drop">
+                <select id="music-affiliation" class="flag-text" required aria-required="true">
+                  <option value="" disabled selected>Qual seu vínculo com a música?*</option>
+                </select>
+              </div>
+            </div>
+            <div class="div-2">
+              <label for="name" class="text-wrapper-4">(*) Campos obrigatórios</label>
+            </div>
+            <button type="submit" class="button-lead" style="background: none; border-style: none;">
+              <div class="button-lead-2">
+                <div class="QUERO-ABRIR-MINHA-wrapper">
+                  <p class="QUERO-ABRIR-MINHA">Entrar para fila de espera</p>
+                </div>
+                <img class="arrow-drop-down-dp" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1-3.svg" />
+              </div>
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <aside class="form-modal-mobile overlay-lead-2">
+      <section class="text">
+        <button class="btn-close-modal"><img class="pi-x" src="img/pi_x.svg" /></button>
+        <h2 class="text-wrapper-2">Obrigado pelo interesse em abrir uma conta com a gente.</h2>
+        <p class="div">Por enquanto, o acesso ao Pal.Co é limitado e nossas vagas já foram preenchidas.</p>
+      </section>
+      <section class="text-2">
+        <h3 class="text-wrapper-2">Mas, fique tranquilo.</h3>
+        <p class="p">Quer garantir seu lugar no Pal.co?</p>
+        <p class="div">
+          Preencha seus dados abaixo e entre para a nossa lista de espera. Quando novas vagas abrirem, você será um dos
+          primeiros a saber.
+        </p>
+      </section>
+      <form id="form" class="forms-2">
+        <div class="div-2">
+          <input id="name" class="input-text" type="text" placeholder="Nome completo*" required aria-required="true" />
+        </div>
+        <div class="div-2">
+          <div class="input-telefone">
+            <input id="ddd" class="input-text-3" type="tel" placeholder="DDD*" required aria-required="true"
+              maxlength="2" />
+            <input id="phone" class="input-text-2" type="tel" placeholder="Telefone*" required aria-required="true"
+              maxlength="10" />
+          </div>
+        </div>
+        <div class="div-2">
+          <input id="email" class="input" placeholder="Email*" type="email" required aria-required="true" />
+        </div>
+        <div class="div-2">
+          <div class="input-drop">
+            <select id="music-affiliation" class="flag-text" required aria-required="true">
+              <option value="" disabled selected>Qual seu vínculo com a música?</option>
+            </select>
+          </div>
+        </div>
+        <div class="div-2">
+          <label for="name" class="text-wrapper-3">(*) Campos obrigatórios</label>
+        </div>
+        <button type="submit" class="button-lead" style="background: none; border-style: none;">
+          <div class="button-lead-2">
+            <div class="QUERO-ABRIR-MINHA-wrapper">
+              <p class="QUERO-ABRIR-MINHA">Entrar para fila de espera</p>
+            </div>
+            <img class="arrow-drop-down-dp" src="img/arrow-drop-down-24dp-e8eaed-fill0-wght400-grad0-opsz24-1-3.svg" />
+          </div>
+        </button>
+      </form>
+    </aside>
   </div>
 
-  <!----- MODAL ------>
-  <!-- <div class="modal-wrapper">
-    <div class="modal">
-      <h2>Excluir Pergunta</h2>
-      <p>Tem certeza que você deseja excluir esta pergunta?</p>
 
-      <form action="#" method="POST">
-        <label class="sr-only" for-id="password">Digite sua senha admin</label>
-        <input type="password" id="password" name="password" placeholder="Digite sua senha" />
 
-        <div class="buttons">
-          <div class="button grey cancel">Cancelar</div>
-          <button class="red">Sim, excluir</button>
-        </div>
-      </form>
-
-    </div>
-  </div> -->
-  <script src="script.js" crossorigin="anonymous"></script>
-  <script src="api.js" crossorigin="anonymous"></script>
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/modal-form-sync.js"></script>
+  <script type="module" src="js/vinculos-select.js"></script>
+  <script type="module" src="js/input-validation.js"></script>
 </body>
 
 </html>
